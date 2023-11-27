@@ -1,0 +1,142 @@
+Question 1:Write code to determine and print the grade based on the score
+         import java.util.Scanner;
+
+         public class GradeChecker {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter the student's score: ");
+                 int score = scanner.nextInt();
+                 checkGrade(score);
+             }
+
+             public static void checkGrade(int score) {
+
+             }
+         }
+
+Question 2:Write code to compare and print the relationship between num1 and num2
+
+         import java.util.Scanner;
+
+         public class NumberComparison {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter the first number: ");
+                 int num1 = scanner.nextInt();
+                 System.out.print("Enter the second number: ");
+                 int num2 = scanner.nextInt();
+                 compareNumbers(num1, num2);
+             }
+
+             public static void compareNumbers(int num1, int num2) {
+
+             }
+         }
+
+Question 3:Write code to check and print if the given year is a leap year or not
+
+         import java.util.Scanner;
+
+         public class LeapYearChecker {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter a year: ");
+                 int year = scanner.nextInt();
+                 checkLeapYear(year);
+             }
+
+             public static void checkLeapYear(int year) {
+
+             }
+         }
+
+Question 4:Write code to determine and print the time of day based on the hour
+
+         import java.util.Scanner;
+
+         public class TimeOfDay {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter the hour (24-hour format): ");
+                 int hour = scanner.nextInt();
+                 determineTimeOfDay(hour);
+             }
+
+             public static void determineTimeOfDay(int hour) {
+
+             }
+         }
+
+Question 5:Write code to simulate the behavior of a traffic light based on the color
+
+         import java.util.Scanner;
+
+         public class TrafficLightSimulator {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter the color of the traffic light: ");
+                 String color = scanner.next();
+                 simulateTrafficLight(color);
+             }
+
+             public static void simulateTrafficLight(String color) {
+
+             }
+         }
+
+Question 6: Write a Java program using a for loop to print the numbers from 1 to 10.
+
+         for (int i = 1; i <= 10; i++) {
+             System.out.print(i + " ");
+         }
+
+Question 7: Create a Java program that uses nested loops to print a pattern of stars in the shape of a right-angled triangle.
+
+         for (int i = 1; i <= 5; i++) {
+             for (int j = 1; j <= i; j++) {
+                 System.out.print("* ");
+             }
+             System.out.println();
+         }
+
+Question 8: Implement a Java program using a while loop to find the sum of the first 100 natural numbers.
+
+         int sum = 0;
+         int i = 1;
+         while (i <= 100) {
+             sum += i;
+             i++;
+         }
+         System.out.println("Sum of first 100 natural numbers: " + sum);
+
+Question 9: Write a Java program that uses a do-while loop to repeatedly prompt the user for a number until they enter -1.
+
+         import java.util.Scanner;
+
+         Scanner scanner = new Scanner(System.in);
+         int number;
+         do {
+             System.out.print("Enter a number (-1 to exit): ");
+             number = scanner.nextInt();
+         } while (number != -1);
+
+Question 10: Create a Java program using a for loop and the break statement to find the first three prime numbers.
+
+         int count = 0;
+         for (int num = 2; ; num++) {
+             boolean isPrime = true;
+             for (int i = 2; i <= Math.sqrt(num); i++) {
+                 if (num % i == 0) {
+                     isPrime = false;
+                     break;
+                 }
+             }
+             if (isPrime) {
+                 System.out.println(num);
+                 count++;
+             }
+             if (count == 3) {
+                 break;
+             }
+         }
+
