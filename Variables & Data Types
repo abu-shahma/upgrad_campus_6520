@@ -1,0 +1,170 @@
+Question 1: Declare three variables (age, height, gender) and initialize them with appropriate values. Print the values of these variables.
+
+          public class VariableExample {
+              public static void main(String[] args) {
+                  // Declare and initialize variables
+                  int age = 25;
+                  double height = 5.9;
+                  char gender = 'M';
+
+                  // Print variables
+                  System.out.println("Age: " + age);
+                  System.out.println("Height: " + height);
+                  System.out.println("Gender: " + gender);
+              }
+          }
+
+
+Question 2: Explore implicit and explicit type (Datatype) conversions in Java. Explain the output of the program.
+
+         public class TypeConversionExample {
+             public static void main(String[] args) {
+                 // Implicit type conversion
+                 int numInt = 10;
+                 double numDouble = numInt;
+
+                 // Explicit type conversion
+                 double doubleNum = 20.5;
+                 int intNum = (int) doubleNum;
+
+                 // Print converted values
+                 System.out.println("Implicit Conversion: " + numDouble);
+                 System.out.println("Explicit Conversion: " + intNum);
+             }
+         }
+
+
+Question 3: Declare two strings (firstName and lastName) and concatenate them to form the full name. Print the full name.
+
+         public class StringConcatenationExample {
+             public static void main(String[] args) {
+                 // Concatenate strings
+                 String firstName = "John";
+                 String lastName = "Doe";
+                 String fullName = firstName + " " + lastName;
+
+                 // Print full name
+                 System.out.println("Full Name: " + fullName);
+             }
+         }
+
+Question 4: Write a program that takes the user's age as input and prints it. Test the program with different age inputs.
+
+         import java.util.Scanner;
+
+         public class UserInputExample {
+             public static void main(String[] args) {
+                 // Get user input
+                 Scanner scanner = new Scanner(System.in);
+                 System.out.print("Enter your age: ");
+                 int age = scanner.nextInt();
+
+                 // Print user input
+                 System.out.println("Your Age: " + age);
+
+                 // Close scanner
+                 scanner.close();
+             }
+         }
+
+
+Question 5: Declare and initialize an array of integers. Calculate and print the sum of the array elements.
+
+         public class ArraySum {
+             public static void main(String[] args) {
+                 // Declare and initialize an array of integers
+                 int[] numbers = {10, 20, 30, 40, 50};
+
+                 // Calculate the sum of array elements
+                 int sum = 0;
+                 for (int i = 0; i < numbers.length; i++) {
+                     sum += numbers[i];
+                 }
+
+                 // Print the sum
+                 System.out.println("Sum of Array Elements: " + sum);
+             }
+         }
+
+
+Question 6: Declare two variables a and b. Use relational operators to compare the values of a and b. Print the results.
+
+         public class RelationalOperators {
+             public static void main(String[] args) {
+                 // Declare two variables
+                 int a = 5;
+                 int b = 10;
+
+                 // Use relational operators to compare values
+                 System.out.println("a < b: " + (a < b));
+                 System.out.println("a > b: " + (a > b));
+                 System.out.println("a <= b: " + (a <= b));
+                 System.out.println("a >= b: " + (a >= b));
+                 System.out.println("a == b: " + (a == b));
+                 System.out.println("a != b: " + (a != b));
+             }
+         }
+
+Question 7: Declare two boolean variables x and y. Use logical operators to combine boolean values. Print the results.
+
+         public class LogicalOperators {
+             public static void main(String[] args) {
+                 // Declare two boolean variables
+                 boolean x = true;
+                 boolean y = false;
+
+                 // Use logical operators to combine boolean values
+                 System.out.println("x && y: " + (x && y));
+                 System.out.println("x || y: " + (x || y));
+                 System.out.println("!x: " + (!x));
+             }
+         }
+
+Question 8: Declare three boolean variables a, b, and c. Evaluate the expression a && b || c and print the result.
+
+         public class LogicalAndPrecedence {
+             public static void main(String[] args) {
+                 // Declare three boolean variables
+                 boolean a = true;
+                 boolean b = false;
+                 boolean c = true;
+
+                 // Evaluate the expression with logical AND
+                 boolean result = a && b || c;
+
+                 // Print the result
+                 System.out.println("Result: " + result);
+             }
+         }
+
+Question 9: Declare three boolean variables x, y, and z. Evaluate the expression x || y && z and print the result.
+
+         public class LogicalOrPrecedence {
+             public static void main(String[] args) {
+                 // Declare three boolean variables
+                 boolean x = true;
+                 boolean y = false;
+                 boolean z = true;
+
+                 // Evaluate the expression with logical OR
+                 boolean result = x || y && z;
+
+                 // Print the result
+                 System.out.println("Result: " + result);
+             }
+         }
+
+Question 10: Declare a boolean variable p. Evaluate the expression !p || p && !p and print the result.
+
+         public class LogicalNotPrecedence {
+             public static void main(String[] args) {
+                 // Declare a boolean variable
+                 boolean p = true;
+
+                 // Evaluate the expression with logical NOT
+                 boolean result = !p || p && !p;
+
+                 // Print the result
+                 System.out.println("Result: " + result);
+             }
+         }
